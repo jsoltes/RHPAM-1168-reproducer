@@ -6,12 +6,25 @@ package com.myspace.test;
 
 public class DataObject implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DataObject() {
-    }
+	private java.util.List<com.myspace.test.NestedObject> multipleSubform;
 
+	public DataObject() {
+	}
 
+	public java.util.List<com.myspace.test.NestedObject> getMultipleSubform() {
+		return this.multipleSubform;
+	}
 
+	public void setMultipleSubform(
+			java.util.List<com.myspace.test.NestedObject> multipleSubform) {
+		this.multipleSubform = multipleSubform;
+	}
+
+	public DataObject(
+			java.util.List<com.myspace.test.NestedObject> multipleSubform) {
+		this.multipleSubform = multipleSubform;
+	}
 
 }
