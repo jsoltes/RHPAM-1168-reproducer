@@ -6,12 +6,23 @@ package com.myspace.test;
 
 public class NestedObject implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public NestedObject() {
-    }
+	private int age;
 
+	public NestedObject() {
+	}
 
+	public int getAge() {
+		return this.age;
+	}
 
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public NestedObject(int age) {
+		this.age = age;
+	}
 
 }
